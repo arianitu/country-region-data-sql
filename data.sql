@@ -248,7 +248,7 @@ INSERT INTO `countries`(`id`, `name`, `code`) VALUES
   (247, 'Zambia', 'ZM'),
   (248, 'Zimbabwe', 'ZW');
 
-INSERT INTO `regions`(`name`, `code`, `country_code`)
+INSERT INTO `regions`(`name`, `code`, `country_id`) VALUES 
   ('Badakhshan', 'BDS', 1),
   ('Badghis', 'BDG', 1),
   ('Baghlan', 'BGL', 1),
@@ -282,7 +282,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sar-e Pol', 'SAR', 1),
   ('Takhar', 'TAK', 1),
   ('Urozgan', 'ORU', 1),
-  ('Zabul', 'ZAB', 1);
+  ('Zabul', 'ZAB', 1),
   ('Brändö', 'BR', 2),
   ('Eckerö', 'EC', 2),
   ('Finström', 'FN', 2),
@@ -298,7 +298,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Saltvik', 'SV', 2),
   ('Sottunga', 'ST', 2),
   ('Sund', 'SD', 2),
-  ('Vårdö', 'VR', 2);
+  ('Vårdö', 'VR', 2),
   ('Berat', '01', 3),
   ('Dibër', '09', 3),
   ('Durrës', '02', 3),
@@ -310,7 +310,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Lezhë', '08', 3),
   ('Shkodër', '10', 3),
   ('Tirana', '11', 3),
-  ('Vlorë', '12', 3);
+  ('Vlorë', '12', 3),
   ('Adrar', '01', 4),
   ('Aïn Defla', '44', 4),
   ('Aïn Témouchent', '46', 4),
@@ -358,20 +358,20 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tipaza', '42', 4),
   ('Tissemsilt', '38', 4),
   ('Tizi Ouzou', '15', 4),
-  ('Tlemcen', '13', 4);
+  ('Tlemcen', '13', 4),
   ('Tutuila', '01', 5),
   ('Aunu\'u', '02', 5),
   ('Ta\'ū', '03', 5),
   ('Ofu‑Olosega', '04', 5),
   ('Rose Atoll', '21', 5),
-  ('Swains Island', '22', 5);
+  ('Swains Island', '22', 5),
   ('Andorra la Vella', '07', 6),
   ('Canillo', '02', 6),
   ('Encamp', '03', 6),
   ('Escaldes-Engordany', '08', 6),
   ('La Massana', '04', 6),
   ('Ordino', '05', 6),
-  ('Sant Julià de Lòria', '06', 6);
+  ('Sant Julià de Lòria', '06', 6),
   ('Bengo', 'BGO', 7),
   ('Benguela', 'BGU', 7),
   ('Bié', 'BIE', 7),
@@ -389,7 +389,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Moxico', 'MOX', 7),
   ('Namibe', 'NAM', 7),
   ('Uíge', 'UIG', 7),
-  ('Zaire', 'ZAI', 7);
+  ('Zaire', 'ZAI', 7),
   ('Anguilla', '01', 8),
   ('Anguillita Island', '02', 8),
   ('Blowing Rock', '03', 8),
@@ -411,8 +411,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sombrero/Hat Island', '19', 8),
   ('South Cay', '20', 8),
   ('South Wager Island', '21', 8),
-  ('West Cay', '22', 8);
-  ('Antarctica', 'AQ', 9);
+  ('West Cay', '22', 8),
+  ('Antarctica', 'AQ', 9),
   ('Antigua Island', '01', 10),
   ('Barbuda Island', '02', 10),
   ('Bird Island', '04', 10),
@@ -444,7 +444,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('The Sisters', '34', 10),
   ('Vernon Island', '35', 10),
   ('Wicked Will Island', '36', 10),
-  ('York Island', '37', 10);
+  ('York Island', '37', 10),
   ('Buenos Aires', 'B', 11),
   ('Capital Federal', 'C', 11),
   ('Catamarca', 'K', 11),
@@ -468,7 +468,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Santa Fe', 'S', 11),
   ('Santiago del Estero', 'G', 11),
   ('Tierra del Fuego', 'V', 11),
-  ('Tucumán', 'T', 11);
+  ('Tucumán', 'T', 11),
   ('Aragatsotn', 'AG', 12),
   ('Ararat', 'AR', 12),
   ('Armavir', 'AV', 12),
@@ -479,8 +479,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Syunik', 'SU', 12),
   ('Tavush', 'TV', 12),
   ('Vayots Dzor', 'VD', 12),
-  ('Yerevan', 'ER', 12);
-  ('Aruba', 'AW', 13);
+  ('Yerevan', 'ER', 12),
+  ('Aruba', 'AW', 13),
   ('Australian Capital Territory', 'ACT', 14),
   ('New South Wales', 'NSW', 14),
   ('Northern Territory', 'NT', 14),
@@ -488,7 +488,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('South Australia', 'SA', 14),
   ('Tasmania', 'TAS', 14),
   ('Victoria', 'VIC', 14),
-  ('Western Australia', 'WA', 14);
+  ('Western Australia', 'WA', 14),
   ('Burgenland', '1', 15),
   ('Kärnten', '2', 15),
   ('Niederösterreich', '3', 15),
@@ -497,7 +497,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Steiermark', '6', 15),
   ('Tirol', '7', 15),
   ('Vorarlberg', '8', 15),
-  ('Wien', '9', 15);
+  ('Wien', '9', 15),
   ('Abşeron', 'ABS', 16),
   ('Ağcabədi', 'AGC', 16),
   ('Ağdam', 'AGM', 16),
@@ -564,7 +564,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Yevlax', 'YEV', 16),
   ('Zəngilan', 'ZAN', 16),
   ('Zaqatala', 'ZAQ', 16),
-  ('Zərdab', 'ZAR', 16);
+  ('Zərdab', 'ZAR', 16),
   ('Acklins Island', '01', 17),
   ('Berry Islands', '22', 17),
   ('Bimini', '02', 17),
@@ -598,12 +598,12 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('South Abaco', '35', 17),
   ('South Andros', '36', 17),
   ('South Eleuthera', '37', 17),
-  ('West Grand Bahama', '39', 17);
+  ('West Grand Bahama', '39', 17),
   ('Al Janūbīyah', '14', 18),
   ('Al Manāmah', '13', 18),
   ('Al Muḩarraq', '15', 18),
   ('Al Wusţá', '16', 18),
-  ('Ash Shamālīyah', '17', 18);
+  ('Ash Shamālīyah', '17', 18),
   ('Barisal', 'A', 19),
   ('Chittagong', 'B', 19),
   ('Dhaka', 'C', 19),
@@ -611,7 +611,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Mymensingh', 'M', 19),
   ('Rajshahi', 'E', 19),
   ('Rangpur', 'F', 19),
-  ('Sylhet', 'G', 19);
+  ('Sylhet', 'G', 19),
   ('Christ Church', '01', 20),
   ('Saint Andrew', '02', 20),
   ('Saint George', '03', 20),
@@ -622,23 +622,23 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Saint Michael', '08', 20),
   ('Saint Peter', '09', 20),
   ('Saint Philip', '10', 20),
-  ('Saint Thomas', '11', 20);
+  ('Saint Thomas', '11', 20),
   ('Brest voblast', 'BR', 21),
   ('Gorod Minsk', 'HM', 21),
   ('Homiel voblast', 'HO', 21),
   ('Hrodna voblast', 'HR', 21),
   ('Mahilyow voblast', 'MA', 21),
   ('Minsk voblast', 'MI', 21),
-  ('Vitsebsk voblast', 'VI', 21);
+  ('Vitsebsk voblast', 'VI', 21),
   ('Brussels', 'BRU', 22),
   ('Flanders', 'VLG', 22),
-  ('Wallonia', 'WAL', 22);
+  ('Wallonia', 'WAL', 22),
   ('Belize District', 'BZ', 23),
   ('Cayo District', 'CY', 23),
   ('Corozal District', 'CZL', 23),
   ('Orange Walk District', 'OW', 23),
   ('Stann Creek District', 'SC', 23),
-  ('Toledo District', 'TOL', 23);
+  ('Toledo District', 'TOL', 23),
   ('Alibori', 'AL', 24),
   ('Atakora', 'AK', 24),
   ('Atlantique', 'AQ', 24),
@@ -650,7 +650,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Mono Department', 'MO', 24),
   ('Ouémé', 'OU', 24),
   ('Plateau', 'PL', 24),
-  ('Zou', 'ZO', 24);
+  ('Zou', 'ZO', 24),
   ('City of Hamilton', '03', 25),
   ('Devonshire Parish', '01', 25),
   ('Hamilton Parish', '02', 25),
@@ -661,7 +661,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Southampton Parish', '10', 25),
   ('St. George\'s Parish', '07', 25),
   ('Town of St. George', '06', 25),
-  ('Warwick Parish', '11', 25);
+  ('Warwick Parish', '11', 25),
   ('Bumthang', '33', 26),
   ('Chhukha', '12', 26),
   ('Dagana', '22', 26),
@@ -681,7 +681,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Trongsa', '32', 26),
   ('Tsirang', '21', 26),
   ('Wangdue Phodrang', '24', 26),
-  ('Zhemgang', '34', 26);
+  ('Zhemgang', '34', 26),
   ('Beni', 'B', 27),
   ('Chuquisaca', 'H', 27),
   ('Cochabamba', 'C', 27),
@@ -690,13 +690,13 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Pando', 'N', 27),
   ('Potosí', 'P', 27),
   ('Santa Cruz', 'S', 27),
-  ('Tarija', 'T', 27);
+  ('Tarija', 'T', 27),
   ('Bonaire', 'BO', 28),
   ('Saba Isand', 'SA', 28),
-  ('Sint Eustatius', 'SE', 28);
+  ('Sint Eustatius', 'SE', 28),
   ('Brčko Distrikt', 'BRC', 29),
   ('Federacija Bosne i Hercegovine', 'BIH', 29),
-  ('Republika Srpska', 'SRP', 29);
+  ('Republika Srpska', 'SRP', 29),
   ('Central', 'CE', 30),
   ('Ghanzi', 'GH', 30),
   ('Kgalagadi', 'KG', 30),
@@ -705,8 +705,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('North West', 'NW', 30),
   ('North-East', 'NE', 30),
   ('South East', 'SE', 30),
-  ('Southern', 'SO', 30);
-  ('Bouvet Island', 'BV', 31);
+  ('Southern', 'SO', 30),
+  ('Bouvet Island', 'BV', 31),
   ('Acre', 'AC', 32),
   ('Alagoas', 'AL', 32),
   ('Amapá', 'AP', 32),
@@ -733,12 +733,12 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Santa Catarina', 'SC', 32),
   ('São Paulo', 'SP', 32),
   ('Sergipe', 'SE', 32),
-  ('Tocantins', 'TO', 32);
-  ('British Indian Ocean Territory', 'IO', 33);
+  ('Tocantins', 'TO', 32),
+  ('British Indian Ocean Territory', 'IO', 33),
   ('Belait', 'BE', 34),
   ('Brunei Muara', 'BM', 34),
   ('Temburong', 'TE', 34),
-  ('Tutong', 'TU', 34);
+  ('Tutong', 'TU', 34),
   ('Blagoevgrad', '01', 35),
   ('Burgas', '02', 35),
   ('Dobrich', '08', 35),
@@ -766,7 +766,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Varna', '03', 35),
   ('Veliko Turnovo', '04', 35),
   ('Vidin', '05', 35),
-  ('Vraca', '06', 35);
+  ('Vraca', '06', 35),
   ('Balé', 'BAL', 36),
   ('Bam/Lake Bam', 'BAM', 36),
   ('Banwa Province', 'BAN', 36),
@@ -811,7 +811,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Yatenga', 'YAT', 36),
   ('Ziro', 'ZIR', 36),
   ('Zondoma', 'ZON', 36),
-  ('Zoundwéogo', 'ZOU', 36);
+  ('Zoundwéogo', 'ZOU', 36),
   ('Bubanza', 'BB', 37),
   ('Bujumbura Mairie', 'BM', 37),
   ('Bujumbura Rural', 'BL', 37),
@@ -828,7 +828,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Mwaro', 'MW', 37),
   ('Ngozi', 'NG', 37),
   ('Rutana', 'RT', 37),
-  ('Ruyigi', 'RY', 37);
+  ('Ruyigi', 'RY', 37),
   ('Baat Dambang', '2', 38),
   ('Banteay Mean Chey', '1', 38),
   ('Kampong Chaam', '3', 38),
@@ -853,7 +853,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Stueng Treng', '19', 38),
   ('Svaay Rieng', '20', 38),
   ('Taakaev', '21', 38),
-  ('Tbong Khmum', '25', 38);
+  ('Tbong Khmum', '25', 38),
   ('Adamaoua', 'AD', 39),
   ('Centre', 'CE', 39),
   ('Est', 'ES', 39),
@@ -863,7 +863,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Nord-Ouest', 'NW', 39),
   ('Ouest', 'OU', 39),
   ('Sud', 'SU', 39),
-  ('Sud-Ouest', 'SW', 39);
+  ('Sud-Ouest', 'SW', 39),
   ('Alberta', 'AB', 40),
   ('British Columbia', 'BC', 40),
   ('Manitoba', 'MB', 40),
@@ -876,7 +876,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Prince Edward Island', 'PE', 40),
   ('Quebec', 'QC', 40),
   ('Saskatchewan', 'SK', 40),
-  ('Yukon', 'YT', 40);
+  ('Yukon', 'YT', 40),
   ('Boa Vista', 'BV', 41),
   ('Brava', 'BR', 41),
   ('Calheta de São Miguel', 'CS', 41),
@@ -895,7 +895,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('São Nicolau', 'SN', 41),
   ('São Vicente', 'SV', 41),
   ('Tarrafal', 'TA', 41),
-  ('Tarrafal de São Nicolau', 'TS', 41);
+  ('Tarrafal de São Nicolau', 'TS', 41),
   ('Creek', '', 42),
   ('Eastern', '', 42),
   ('Midland', '', 42),
@@ -903,7 +903,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Spot Bay', '', 42),
   ('Stake Bay', '', 42),
   ('West End', '', 42),
-  ('Western', '', 42);
+  ('Western', '', 42),
   ('Bamingui-Bangoran', 'BB', 43),
   ('Bangui', 'BGF', 43),
   ('Basse-Kotto', 'BK', 43),
@@ -920,7 +920,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Ouham', 'AC', 43),
   ('Ouham Péndé', 'OP', 43),
   ('Sangha-Mbaéré', 'SE', 43),
-  ('Vakaga', 'VK', 43);
+  ('Vakaga', 'VK', 43),
   ('Bahr el Ghazal', 'BG', 44),
   ('Batha', 'BA', 44),
   ('Borkou', 'BO', 44),
@@ -942,7 +942,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tandjilé', 'TA', 44),
   ('Tibesti', 'TI', 44),
   ('Ville de Ndjamena', 'ND', 44),
-  ('Wadi Fira', 'WF', 44);
+  ('Wadi Fira', 'WF', 44),
   ('Aisén del General Carlos Ibáñez del Campo', 'AI', 45),
   ('Antofagasta', 'AN', 45),
   ('Araucanía', 'AR', 45),
@@ -959,7 +959,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Ñuble', 'NB', 45),
   ('Región Metropolitana de Santiago', 'RM', 45),
   ('Tarapacá', 'TA', 45),
-  ('Valparaíso', 'VS', 45);
+  ('Valparaíso', 'VS', 45),
   ('Anhui', '34', 46),
   ('Beijing', '11', 46),
   ('Chongqing', '50', 46),
@@ -992,14 +992,14 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tibet', '54', 46),
   ('Xinjiang', '65', 46),
   ('Yunnan', '53', 46),
-  ('Zhejiang', '33', 46);
-  ('Christmas Island', 'CX', 47);
+  ('Zhejiang', '33', 46),
+  ('Christmas Island', 'CX', 47),
   ('Direction Island', 'DI', 48),
   ('Home Island', 'HM', 48),
   ('Horsburgh Island', 'HR', 48),
   ('North Keeling Island', 'NK', 48),
   ('South Island', 'SI', 48),
-  ('West Island', 'WI', 48);
+  ('West Island', 'WI', 48),
   ('Amazonas', 'AMA', 49),
   ('Antioquia', 'ANT', 49),
   ('Arauca', 'ARA', 49),
@@ -1032,10 +1032,10 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tolima', 'TOL', 49),
   ('Valle del Cauca', 'VAC', 49),
   ('Vaupés', 'VAU', 49),
-  ('Vichada', 'VID', 49);
+  ('Vichada', 'VID', 49),
   ('Andjazîdja', 'G', 50),
   ('Andjouân', 'A', 50),
-  ('Moûhîlî', 'M', 50);
+  ('Moûhîlî', 'M', 50),
   ('Bouenza', '11', 51),
   ('Brazzaville', 'BZV', 51),
   ('Cuvette', '8', 51),
@@ -1047,7 +1047,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Plateaux', '14', 51),
   ('Pointe-Noire', '16', 51),
   ('Pool', '12', 51),
-  ('Sangha', '13', 51);
+  ('Sangha', '13', 51),
   ('Bandundu', 'BN', 52),
   ('Bas-Congo', 'BC', 52),
   ('Équateur', 'EQ', 52),
@@ -1058,7 +1058,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Maniema', 'MA', 52),
   ('Nord-Kivu', 'NK', 52),
   ('Orientale', 'OR', 52),
-  ('Sud-Kivu', 'SK', 52);
+  ('Sud-Kivu', 'SK', 52),
   ('Aitutaki', '', 53),
   ('Atiu', '', 53),
   ('Avarua', '', 53),
@@ -1070,14 +1070,14 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Palmerston', '', 53),
   ('Penrhyn', '', 53),
   ('Pukapuka', '', 53),
-  ('Rakahanga', '', 53);
+  ('Rakahanga', '', 53),
   ('Alajuela', '2', 54),
   ('Cartago', '3', 54),
   ('Guanacaste', '5', 54),
   ('Heredia', '4', 54),
   ('Limón', '7', 54),
   ('Puntarenas', '6', 54),
-  ('San José', '1', 54);
+  ('San José', '1', 54),
   ('Agnéby', '16', 55),
   ('Bafing', '17', 55),
   ('Bas-Sassandra', '09', 55),
@@ -1096,7 +1096,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sud-Comoé', '13', 55),
   ('Vallée du Bandama', '04', 55),
   ('Worodougou', '14', 55),
-  ('Zanzan', '08', 55);
+  ('Zanzan', '08', 55),
   ('Bjelovarsko-Bilogorska Županija', '07', 56),
   ('Brodsko-Posavska Županija', '12', 56),
   ('Dubrovačko-Neretvanska Županija', '19', 56),
@@ -1117,7 +1117,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Virovitičko-Podravska Županija', '10', 56),
   ('Vukovarsko-Srijemska Županija', '16', 56),
   ('Zadarska Županija', '13', 56),
-  ('Zagrebacka Zupanija', '01', 56);
+  ('Zagrebacka Zupanija', '01', 56),
   ('Artemisa', '15', 57),
   ('Camagüey', '09', 57),
   ('Ciego de Ávila', '08', 57),
@@ -1133,14 +1133,14 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Pinar del Río', '01', 57),
   ('Sancti Spíritus', '07', 57),
   ('Santiago de Cuba', '13', 57),
-  ('Villa Clara', '05', 57);
-  ('Curaçao', 'CW', 58);
+  ('Villa Clara', '05', 57),
+  ('Curaçao', 'CW', 58),
   ('Ammochostos', '04', 59),
   ('Keryneia', '05', 59),
   ('Larnaka', '03', 59),
   ('Lefkosia', '01', 59),
   ('Lemesos', '02', 59),
-  ('Pafos', '05', 59);
+  ('Pafos', '05', 59),
   ('Hlavní město Praha', 'PR', 60),
   ('Jihočeský kraj', 'JC', 60),
   ('Jihomoravský kraj', 'JM', 60),
@@ -1154,7 +1154,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Středočeský kraj', 'ST', 60),
   ('Ústecký kraj', 'US', 60),
   ('Vysočina', 'VY', 60),
-  ('Zlínský kraj', 'ZL', 60);
+  ('Zlínský kraj', 'ZL', 60),
   ('Hovedstaden', '84', 61),
   ('Kujalleq', 'GL-KU', 61),
   ('Midtjylland', '82', 61),
@@ -1169,12 +1169,12 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Strømø', 'FO-03', 61),
   ('Suderø', 'FO-04', 61),
   ('Syddanmark', '83', 61),
-  ('Vågø', 'FO-05', 61);
+  ('Vågø', 'FO-05', 61),
   ('Ali Sabieh', 'AS', 62),
   ('Arta', 'AR', 62),
   ('Dikhil', 'DI', 62),
   ('Obock', 'OB', 62),
-  ('Tadjourah', 'TA', 62);
+  ('Tadjourah', 'TA', 62),
   ('Saint Andrew Parish', '02', 63),
   ('Saint David Parish', '03', 63),
   ('Saint George Parish', '04', 63),
@@ -1184,7 +1184,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Saint Mark Parish', '08', 63),
   ('Saint Patrick Parish', '09', 63),
   ('Saint Paul Parish', '10', 63),
-  ('Saint Peter Parish', '11', 63);
+  ('Saint Peter Parish', '11', 63),
   ('Cibao Central', '02', 64),
   ('Del Valle', '37', 64),
   ('Distrito Nacional', '01', 64),
@@ -1193,7 +1193,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Nordeste', '34', 64),
   ('Noroeste', '34', 64),
   ('Norte', '35', 64),
-  ('Valdesia', '42', 64);
+  ('Valdesia', '42', 64),
   ('Azuay', 'A', 65),
   ('Bolívar', 'B', 65),
   ('Cañar', 'F', 65),
@@ -1217,7 +1217,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Santo Domingo de los Tsáchilas', 'SD', 65),
   ('Sucumbíos', 'U', 65),
   ('Tungurahua', 'T', 65),
-  ('Zamora-Chinchipe', 'Z', 65);
+  ('Zamora-Chinchipe', 'Z', 65),
   ('Alexandria', 'ALX', 66),
   ('Aswan', 'ASN', 66),
   ('Asyout', 'AST', 66),
@@ -1246,7 +1246,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sharqia', 'SHR', 66),
   ('Sixth of October', 'SU', 66),
   ('Sohag', 'SHG', 66),
-  ('South Sinai', 'JS', 66);
+  ('South Sinai', 'JS', 66),
   ('Ahuachapán', 'AH', 67),
   ('Cabañas', 'CA', 67),
   ('Cuscatlán', 'CU', 67),
@@ -1260,20 +1260,20 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Santa Ana', 'SA', 67),
   ('San Vicente', 'SV', 67),
   ('Sonsonate', 'SO', 67),
-  ('Usulután', 'US', 67);
+  ('Usulután', 'US', 67),
   ('Annobón', 'AN', 68),
   ('Bioko Norte', 'BN', 68),
   ('Bioko Sur', 'BS', 68),
   ('Centro Sur', 'CS', 68),
   ('Kié-Ntem', 'KN', 68),
   ('Litoral', 'LI', 68),
-  ('Wele-Nzas', 'WN', 68);
+  ('Wele-Nzas', 'WN', 68),
   ('Anseba', 'AN', 69),
   ('Debub', 'DU', 69),
   ('Debub-Keih-Bahri', 'DK', 69),
   ('Gash-Barka', 'GB', 69),
   ('Maekel', 'MA', 69),
-  ('Semien-Keih-Bahri', 'SK', 69);
+  ('Semien-Keih-Bahri', 'SK', 69),
   ('Harjumaa (Tallinn)', '37', 70),
   ('Hiiumaa (Kardla)', '39', 70),
   ('Ida-Virumaa (Johvi)', '44', 70),
@@ -1288,7 +1288,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tartumaa (Tartu)', '78', 70),
   ('Valgamaa (Valga)', '82', 70),
   ('Viljandimaa (Viljandi)', '84', 70),
-  ('Võrumaa (Voru)', '86', 70);
+  ('Võrumaa (Voru)', '86', 70),
   ('Addis Ababa', 'AA', 71),
   ('Afar', 'AF', 71),
   ('Amhara', 'AM', 71),
@@ -1299,8 +1299,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Oromia', 'OR', 71),
   ('Somali', 'SO', 71),
   ('Southern Nations Nationalities and People\'s Region', 'SN', 71),
-  ('Tigray', 'TI', 71);
-  ('Falkland Islands (Islas Malvinas)', '', 72);
+  ('Tigray', 'TI', 71),
+  ('Falkland Islands (Islas Malvinas)', '', 72),
   ('Bordoy', '', 73),
   ('Eysturoy', '', 73),
   ('Mykines', '', 73),
@@ -1309,7 +1309,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Streymoy', '', 73),
   ('Suduroy', '', 73),
   ('Tvoroyri', '', 73),
-  ('Vagar', '', 73);
+  ('Vagar', '', 73),
   ('Ba', '01', 74),
   ('Bua', '01', 74),
   ('Cakaudrove', '03', 74),
@@ -1324,13 +1324,13 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Rewa', '12', 74),
   ('Rotuma', 'R', 74),
   ('Serua', '12', 74),
-  ('Tailevu', '14', 74);
+  ('Tailevu', '14', 74),
   ('Ahvenanmaan lääni', 'AL', 75),
   ('Etelä-Suomen lääni', 'ES', 75),
   ('Itä-Suomen lääni', 'IS', 75),
   ('Länsi-Suomen lääni', 'LS', 75),
   ('Lapin lääni', 'LL', 75),
-  ('Oulun lääni', 'OL', 75);
+  ('Oulun lääni', 'OL', 75),
   ('Auvergne-Rhône-Alpes', 'ARA', 76),
   ('Bourgogne-Franche-Comté', 'BFC', 76),
   ('Bretagne', 'BRE', 76),
@@ -1356,17 +1356,17 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Saint Martin', 'MF', 76),
   ('Réunion', 'RE', 76),
   ('Terres Australes Françaises', 'TF', 76),
-  ('Wallis-et-Futuna', 'WF', 76);
-  ('French Guiana', '', 77);
+  ('Wallis-et-Futuna', 'WF', 76),
+  ('French Guiana', '', 77),
   ('Archipel des Marquises', '', 78),
   ('Archipel des Tuamotu', '', 78),
   ('Archipel des Tubuai', '', 78),
   ('Iles du Vent', '', 78),
-  ('Iles Sous-le-Vent', '', 78);
+  ('Iles Sous-le-Vent', '', 78),
   ('Adelie Land', '', 79),
   ('Ile Crozet', '', 79),
   ('Iles Kerguelen', '', 79),
-  ('Iles Saint-Paul et Amsterdam', '', 79);
+  ('Iles Saint-Paul et Amsterdam', '', 79),
   ('Estuaire', '1', 80),
   ('Haut-Ogooué', '2', 80),
   ('Moyen-Ogooué', '3', 80),
@@ -1375,13 +1375,13 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Ogooué-Ivindo', '6', 80),
   ('Ogooué-Lolo', '7', 80),
   ('Ogooué-Maritime', '8', 80),
-  ('Woleu-Ntem', '9', 80);
+  ('Woleu-Ntem', '9', 80),
   ('Banjul', 'B', 81),
   ('Central River', 'M', 81),
   ('Lower River', 'L', 81),
   ('North Bank', 'N', 81),
   ('Upper River', 'U', 81),
-  ('Western', 'W', 81);
+  ('Western', 'W', 81),
   ('Abkhazia (Sokhumi)', 'AB', 82),
   ('Ajaria (Bat\'umi)', 'AJ', 82),
   ('Guria', 'GU', 82),
@@ -1393,7 +1393,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Samegrelo-Zemo Svaneti', 'SZ', 82),
   ('Samtskhe-Javakheti', 'SJ', 82),
   ('Shida Kartli', 'SK', 82),
-  ('Tbilisi', 'TB', 82);
+  ('Tbilisi', 'TB', 82),
   ('Baden-Württemberg', 'BW', 83),
   ('Bayern', 'BY', 83),
   ('Berlin', 'BE', 83),
@@ -1409,7 +1409,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sachsen', 'SN', 83),
   ('Sachsen-Anhalt', 'ST', 83),
   ('Schleswig-Holstein', 'SH', 83),
-  ('Thüringen', 'TH', 83);
+  ('Thüringen', 'TH', 83),
   ('Ahafo', '', 84),
   ('Ashanti', 'AH', 84),
   ('Bono', '', 84),
@@ -1425,8 +1425,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Upper West', 'UW', 84),
   ('Volta', 'TV', 84),
   ('Western', 'WP', 84),
-  ('Western North', '', 84);
-  ('Gibraltar', '', 85);
+  ('Western North', '', 84),
+  ('Gibraltar', '', 85),
   ('Anatolikí Makedonía kai Thráki', 'A', 86),
   ('Attikḯ', 'I', 86),
   ('Dytikí Elláda', 'G', 86),
@@ -1440,20 +1440,20 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Thessalía', 'E', 86),
   ('Voreío Aigaío', 'K', 86),
   ('Ípeiros', 'D', 86),
-  ('Ágion Óros', '69', 86);
+  ('Ágion Óros', '69', 86),
   ('Kommune Kujalleq', 'KU', 87),
   ('Kommuneqarfik Sermersooq', 'SM', 87),
   ('Qaasuitsup Kommunia', 'QA', 87),
-  ('Qeqqata Kommunia', 'QE', 87);
+  ('Qeqqata Kommunia', 'QE', 87),
   ('Saint Andrew', '01', 88),
   ('Saint David', '02', 88),
   ('Saint George', '03', 88),
   ('Saint John', '04', 88),
   ('Saint Mark', '05', 88),
   ('Saint Patrick', '06', 88),
-  ('Southern Grenadine Islands', '10', 88);
-  ('Guadeloupe', '', 89);
-  ('Guam', '', 90);
+  ('Southern Grenadine Islands', '10', 88),
+  ('Guadeloupe', '', 89),
+  ('Guam', '', 90),
   ('Alta Verapaz', 'AV', 91),
   ('Baja Verapaz', 'BV', 91),
   ('Chimaltenango', 'CM', 91),
@@ -1475,7 +1475,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sololá', 'SO', 91),
   ('Suchitepéquez', 'SU', 91),
   ('Totonicapán', 'TO', 91),
-  ('Zacapa', 'ZA', 91);
+  ('Zacapa', 'ZA', 91),
   ('Castel', '', 92),
   ('Forest', '', 92),
   ('St. Andrew', '', 92),
@@ -1485,7 +1485,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('St. Sampson', '', 92),
   ('St. Saviour', '', 92),
   ('Torteval', '', 92),
-  ('Vale', '', 92);
+  ('Vale', '', 92),
   ('Boké', 'B', 93),
   ('Conakry', 'C', 93),
   ('Faranah', 'F', 93),
@@ -1493,7 +1493,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Kindia', 'D', 93),
   ('Labé', 'L', 93),
   ('Mamou', 'M', 93),
-  ('Nzérékoré', 'N', 93);
+  ('Nzérékoré', 'N', 93),
   ('Bafatá', 'BA', 94),
   ('Biombo', 'BM', 94),
   ('Bissau', 'BS', 94),
@@ -1502,7 +1502,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Gabú', 'GA', 94),
   ('Oio', 'OI', 94),
   ('Quinara', 'QU', 94),
-  ('Tombali', 'TO', 94);
+  ('Tombali', 'TO', 94),
   ('Barima-Waini', 'BA', 95),
   ('Cuyuni-Mazaruni', 'CU', 95),
   ('Demerara-Mahaica', 'DE', 95),
@@ -1512,7 +1512,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Pomeroon-Supenaam', 'PM', 95),
   ('Potaro-Siparuni', 'PT', 95),
   ('Upper Demerara-Berbice', 'UD', 95),
-  ('Upper Takutu-Upper Essequibo', 'UT', 95);
+  ('Upper Takutu-Upper Essequibo', 'UT', 95),
   ('Artibonite', 'AR', 96),
   ('Centre', 'CE', 96),
   ('Grand\'Anse', 'GA', 96),
@@ -1522,9 +1522,9 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Nord-Ouest', 'NO', 96),
   ('Ouest', 'OU', 96),
   ('Sud', 'SD', 96),
-  ('Sud-Est', 'SE', 96);
-  ('Heard Island and McDonald Islands', '', 97);
-  ('Holy See (Vatican City)', '01', 98);
+  ('Sud-Est', 'SE', 96),
+  ('Heard Island and McDonald Islands', '', 97),
+  ('Holy See (Vatican City)', '01', 98),
   ('Atlántida', 'AT', 99),
   ('Choluteca', 'CH', 99),
   ('Colón', 'CL', 99),
@@ -1542,8 +1542,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Olancho', 'OL', 99),
   ('Santa Bárbara', 'SB', 99),
   ('Valle', 'VA', 99),
-  ('Yoro', 'YO', 99);
-  ('Hong Kong', 'HK', 100);
+  ('Yoro', 'YO', 99),
+  ('Hong Kong', 'HK', 100),
   ('Bács-Kiskun', 'BK', 101),
   ('Baranya', 'BA', 101),
   ('Békés', 'BE', 101),
@@ -1586,7 +1586,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Veszprém', 'VE', 101),
   ('Veszprém (City)', 'VM', 101),
   ('Zala', 'ZA', 101),
-  ('Zalaegerszeg', 'ZE', 101);
+  ('Zalaegerszeg', 'ZE', 101),
   ('Austurland', '7', 102),
   ('Höfuðborgarsvæði utan Reykjavíkur', '1', 102),
   ('Norðurland eystra', '6', 102),
@@ -1594,7 +1594,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Suðurland', '8', 102),
   ('Suðurnes', '2', 102),
   ('Vestfirðir', '4', 102),
-  ('Vesturland', '3', 102);
+  ('Vesturland', '3', 102),
   ('Andaman and Nicobar Islands', 'AN', 103),
   ('Andhra Pradesh', 'AP', 103),
   ('Arunachal Pradesh', 'AR', 103),
@@ -1630,7 +1630,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tripura', 'TR', 103),
   ('Uttarakhand', 'UT', 103),
   ('Uttar Pradesh', 'UP', 103),
-  ('West Bengal', 'WB', 103);
+  ('West Bengal', 'WB', 103),
   ('Aceh', 'AC', 104),
   ('Bali', 'BA', 104),
   ('Bangka Belitung', 'BB', 104),
@@ -1663,7 +1663,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sumatera Barat', 'SB', 104),
   ('Sumatera Selatan', 'SS', 104),
   ('Sumatera Utara', 'SU', 104),
-  ('Yogyakarta', 'YO', 104);
+  ('Yogyakarta', 'YO', 104),
   ('Alborz', '32', 105),
   ('Ardabīl', '03', 105),
   ('Āz̄arbāyjān-e Gharbī', '02', 105),
@@ -1694,7 +1694,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sīstān va Balūchestān', '13', 105),
   ('Tehrān', '07', 105),
   ('Yazd', '25', 105),
-  ('Zanjān', '11', 105);
+  ('Zanjān', '11', 105),
   ('Al Anbār', 'AN', 106),
   ('Al Başrah', 'BA', 106),
   ('Al Muthanná', 'MU', 106),
@@ -1712,7 +1712,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Maysān', 'MA', 106),
   ('Nīnawá', 'NI', 106),
   ('Şalāḩ ad Dīn', 'SD', 106),
-  ('Wāsiţ', 'WA', 106);
+  ('Wāsiţ', 'WA', 106),
   ('Carlow', 'CW', 107),
   ('Cavan', 'CN', 107),
   ('Clare', 'CE', 107),
@@ -1738,14 +1738,14 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Waterford', 'WD', 107),
   ('Westmeath', 'WH', 107),
   ('Wexford', 'WX', 107),
-  ('Wicklow', 'WW', 107);
-  ('Isle of Man', '', 108);
+  ('Wicklow', 'WW', 107),
+  ('Isle of Man', '', 108),
   ('HaDarom', 'D', 109),
   ('HaMerkaz', 'M', 109),
   ('HaTsafon', 'Z', 109),
   ('H̱efa', 'HA', 109),
   ('Tel-Aviv', 'TA', 109),
-  ('Yerushalayim', 'JM', 109);
+  ('Yerushalayim', 'JM', 109),
   ('Abruzzo', '65', 110),
   ('Basilicata', '77', 110),
   ('Calabria', '78', 110),
@@ -1765,7 +1765,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Trentino-Alto Adige', '32', 110),
   ('Umbria', '55', 110),
   ('Valle d\'Aosta', '23', 110),
-  ('Veneto', '34', 110);
+  ('Veneto', '34', 110),
   ('Clarendon', '13', 111),
   ('Hanover', '09', 111),
   ('Kingston', '01', 111),
@@ -1779,7 +1779,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Saint Mary', '05', 111),
   ('Saint Thomas', '03', 111),
   ('Trelawny', '07', 111),
-  ('Westmoreland', '10', 111);
+  ('Westmoreland', '10', 111),
   ('Aichi', '23', 112),
   ('Akita', '05', 112),
   ('Aomori', '02', 112),
@@ -1826,8 +1826,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Wakayama', '30', 112),
   ('Yamagata', '06', 112),
   ('Yamaguchi', '35', 112),
-  ('Yamanashi', '19', 112);
-  ('Jersey', '', 113);
+  ('Yamanashi', '19', 112),
+  ('Jersey', '', 113),
   ('‘Ajlūn', 'AJ', 114),
   ('Al \'Aqabah', 'AQ', 114),
   ('Al Balqā’', 'BA', 114),
@@ -1839,7 +1839,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Irbid', 'IR', 114),
   ('Jarash', 'JA', 114),
   ('Ma‘ān', 'MN', 114),
-  ('Mādabā', 'MD', 114);
+  ('Mādabā', 'MD', 114),
   ('Almaty', 'ALA', 115),
   ('Aqmola', 'AKM', 115),
   ('Aqtobe', 'AKT', 115),
@@ -1855,7 +1855,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Qyzylorda', 'KZY', 115),
   ('Shyghys Qazaqstan', 'VOS', 115),
   ('Soltustik Qazaqstan', 'SEV', 115),
-  ('Zhambyl', 'ZHA', 115);
+  ('Zhambyl', 'ZHA', 115),
   ('Baringo', '01', 116),
   ('Bomet', '02', 116),
   ('Bungoma', '03', 116),
@@ -1902,7 +1902,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Uasin Gishu', '44', 116),
   ('Vihiga', '45', 116),
   ('Wajir', '46', 116),
-  ('West Pokot', '47', 116);
+  ('West Pokot', '47', 116),
   ('Abaiang', '', 117),
   ('Abemama', '', 117),
   ('Aranuka', '', 117),
@@ -1929,7 +1929,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tabuaeran', '', 117),
   ('Tamana', '', 117),
   ('Tarawa', '', 117),
-  ('Teraina', '', 117);
+  ('Teraina', '', 117),
   ('Chagang-do (Chagang Province)', '04', 118),
   ('Hamgyong-bukto (North Hamgyong Province)', '09', 118),
   ('Hamgyong-namdo (South Hamgyong Province)', '08', 118),
@@ -1940,7 +1940,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('P\'yongan-bukto (North P\'yongan Province)', '03', 118),
   ('P\'yongan-namdo (South P\'yongan Province)', '02', 118),
   ('P\'yongyang-si (P\'yongyang City)', '01', 118),
-  ('Yanggang-do (Yanggang Province)', '10', 118);
+  ('Yanggang-do (Yanggang Province)', '10', 118),
   ('Ch\'ungch\'ongbuk-do', '43', 119),
   ('Ch\'ungch\'ongnam-do', '44', 119),
   ('Cheju-do', '49', 119),
@@ -1957,13 +1957,13 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sejong', '50', 119),
   ('Taegu-Kwangyokshi', '27', 119),
   ('Taejon-Kwangyokshi', '30', 119),
-  ('Ulsan-Kwangyokshi', '31', 119);
+  ('Ulsan-Kwangyokshi', '31', 119),
   ('Al Aḩmadi', 'AH', 120),
   ('Al Farwānīyah', 'FA', 120),
   ('Al Jahrā’', 'JA', 120),
   ('Al ‘Āşimah', 'KU', 120),
   ('Ḩawallī', 'HA', 120),
-  ('Mubārak al Kabir', 'MU', 120);
+  ('Mubārak al Kabir', 'MU', 120),
   ('Batken Oblasty', 'B', 121),
   ('Bishkek Shaary', 'GB', 121),
   ('Chuy Oblasty (Bishkek)', 'C', 121),
@@ -1971,7 +1971,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Naryn Oblasty', 'N', 121),
   ('Osh Oblasty', 'O', 121),
   ('Talas Oblasty', 'T', 121),
-  ('Ysyk-Kol Oblasty (Karakol)', 'Y', 121);
+  ('Ysyk-Kol Oblasty (Karakol)', 'Y', 121),
   ('Attapu', 'AT', 122),
   ('Bokèo', 'BK', 122),
   ('Bolikhamxai', 'BL', 122),
@@ -1988,7 +1988,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Xaignabouli', 'XA', 122),
   ('Xékong', 'XE', 122),
   ('Xaisomboun', 'XS', 122),
-  ('Xiangkhouang', 'XI', 122);
+  ('Xiangkhouang', 'XI', 122),
   ('Aglona', '001', 123),
   ('Aizkraukle', '002', 123),
   ('Aizpute', '003', 123),
@@ -2107,7 +2107,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Viesīte', '107', 123),
   ('Viļaka', '108', 123),
   ('Viļāni', '109', 123),
-  ('Zilupe', '110', 123);
+  ('Zilupe', '110', 123),
   ('Aakkâr', 'AK', 124),
   ('Baalbelk-Hermel', 'BH', 124),
   ('Béqaa', 'BI', 124),
@@ -2115,7 +2115,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Liban-Nord', 'AS', 124),
   ('Liban-Sud', 'JA', 124),
   ('Mont-Liban', 'JL', 124),
-  ('Nabatîyé', 'NA', 124);
+  ('Nabatîyé', 'NA', 124),
   ('Berea', 'D', 125),
   ('Butha-Buthe', 'B', 125),
   ('Leribe', 'C', 125),
@@ -2125,7 +2125,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Mokhotlong', 'J', 125),
   ('Qacha\'s Nek', 'H', 125),
   ('Quthing', 'G', 125),
-  ('Thaba-Tseka', 'K', 125);
+  ('Thaba-Tseka', 'K', 125),
   ('Bomi', 'BM', 126),
   ('Bong', 'BG', 126),
   ('Gbarpolu', 'GP', 126),
@@ -2140,7 +2140,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Nimba', 'NI', 126),
   ('River Cess', 'RI', 126),
   ('River Geee', 'RG', 126),
-  ('Sinoe', 'SI', 126);
+  ('Sinoe', 'SI', 126),
   ('Al Buţnān', 'BU', 127),
   ('Al Jabal al Akhḑar', 'JA', 127),
   ('Al Jabal al Gharbī', 'JG', 127),
@@ -2162,7 +2162,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Surt', 'SR', 127),
   ('Ţarābulus', 'TB', 127),
   ('Yafran', 'WD', 127),
-  ('Wādī ash Shāţiʾ', 'WS', 127);
+  ('Wādī ash Shāţiʾ', 'WS', 127),
   ('Balzers', '01', 128),
   ('Eschen', '02', 128),
   ('Gamprin', '03', 128),
@@ -2173,7 +2173,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Schellenberg', '08', 128),
   ('Triesen', '09', 128),
   ('Triesenberg', '10', 128),
-  ('Vaduz', '11', 128);
+  ('Vaduz', '11', 128),
   ('Alytaus', 'AL', 129),
   ('Kauno', 'KU', 129),
   ('Klaipėdos', 'KL', 129),
@@ -2183,7 +2183,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tauragės', 'TA', 129),
   ('Telšių', 'TE', 129),
   ('Utenos', 'UT', 129),
-  ('Vilniaus', 'VL', 129);
+  ('Vilniaus', 'VL', 129),
   ('Capellen', 'CA', 130),
   ('Clevaux', 'CL', 130),
   ('Diekirch', 'DI', 130),
@@ -2195,8 +2195,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Redange', 'RD', 130),
   ('Remich', 'RM', 130),
   ('Vianden', 'VD', 130),
-  ('Wiltz', 'WI', 130);
-  ('Macao', '', 131);
+  ('Wiltz', 'WI', 130),
+  ('Macao', '', 131),
   ('Aračinovo', '02', 132),
   ('Berovo', '03', 132),
   ('Bitola', '04', 132),
@@ -2267,13 +2267,13 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Vrapčište', '16', 132),
   ('Zelenikovo', '32', 132),
   ('Zrnovci', '33', 132),
-  ('Želino', '30', 132);
+  ('Želino', '30', 132),
   ('Antananarivo', 'T', 133),
   ('Antsiranana', 'D', 133),
   ('Fianarantsoa', 'F', 133),
   ('Mahajanga', 'M', 133),
   ('Toamasina', 'A', 133),
-  ('Toliara', 'U', 133);
+  ('Toliara', 'U', 133),
   ('Balaka', 'BA', 134),
   ('Blantyre', 'BL', 134),
   ('Chikwawa', 'CK', 134),
@@ -2300,7 +2300,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Rumphi', 'RU', 134),
   ('Salima', 'SA', 134),
   ('Thyolo', 'TH', 134),
-  ('Zomba', 'ZO', 134);
+  ('Zomba', 'ZO', 134),
   ('Johor', '01', 135),
   ('Kedah', '02', 135),
   ('Kelantan', '03', 135),
@@ -2316,7 +2316,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Terengganu', '11', 135),
   ('Wilayah Persekutuan (Kuala Lumpur)', '14', 135),
   ('Wilayah Persekutuan (Labuan)', '15', 135),
-  ('Wilayah Persekutuan (Putrajaya)', '16', 135);
+  ('Wilayah Persekutuan (Putrajaya)', '16', 135),
   ('Alifu Alifu', '02', 136),
   ('Alifu Dhaalu', '00', 136),
   ('Baa', '20', 136),
@@ -2337,7 +2337,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Seenu', '01', 136),
   ('Shaviyani', '24', 136),
   ('Thaa', '08', 136),
-  ('Vaavu', '04', 136);
+  ('Vaavu', '04', 136),
   ('Bamako', 'BKO', 137),
   ('Gao', '7', 137),
   ('Kayes', '1', 137),
@@ -2346,7 +2346,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Mopti', '5', 137),
   ('Segou', '4', 137),
   ('Sikasso', '3', 137),
-  ('Tombouctou', '6', 137);
+  ('Tombouctou', '6', 137),
   ('Attard', '01', 138),
   ('Balzan', '02', 138),
   ('Birgu', '03', 138),
@@ -2414,7 +2414,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Żebbuġ Għawde', '65', 138),
   ('Żebbuġ Malta', '66', 138),
   ('Żejtun', '67', 138),
-  ('Żurrieq', '68', 138);
+  ('Żurrieq', '68', 138),
   ('Ailinglaplap', 'ALL', 139),
   ('Ailuk', 'ALK', 139),
   ('Arno', 'ARN', 139),
@@ -2436,8 +2436,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Ujae', 'UJA', 139),
   ('Utrik', 'UTI', 139),
   ('Wotho', 'WTH', 139),
-  ('Wotje', 'WTJ', 139);
-  ('Martinique', '', 140);
+  ('Wotje', 'WTJ', 139),
+  ('Martinique', '', 140),
   ('Adrar', '07', 141),
   ('Assaba', '03', 141),
   ('Brakna', '05', 141),
@@ -2452,7 +2452,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Nouakchott Sud', '15', 141),
   ('Tagant', '09', 141),
   ('Tiris Zemmour', '11', 141),
-  ('Trarza', '06', 141);
+  ('Trarza', '06', 141),
   ('Agalega Islands', 'AG', 142),
   ('Beau Bassin-Rose Hill', 'BR', 142),
   ('Black River', 'BL', 142),
@@ -2468,7 +2468,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Riviere du Rempart', 'RR', 142),
   ('Rodrigues Island', 'RO', 142),
   ('Savanne', 'SA', 142),
-  ('Vacoas-Phoenix', 'CP', 142);
+  ('Vacoas-Phoenix', 'CP', 142),
   ('Dzaoudzi', '01', 143),
   ('Pamandzi', '02', 143),
   ('Mamoudzou', '03', 143),
@@ -2485,7 +2485,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Acoua', '14', 143),
   ('Mtsamboro', '15', 143),
   ('Bandraboua', '16', 143),
-  ('Koungou', '17', 143);
+  ('Koungou', '17', 143),
   ('Aguascalientes', 'AGU', 144),
   ('Baja California', 'BCN', 144),
   ('Baja California Sur', 'BCS', 144),
@@ -2517,11 +2517,11 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tlaxcala', 'TLA', 144),
   ('Veracruz', 'VER', 144),
   ('Yucatán', 'YUC', 144),
-  ('Zacatecas', 'ZAC', 144);
+  ('Zacatecas', 'ZAC', 144),
   ('Chuuk (Truk)', 'TRK', 145),
   ('Kosrae', 'KSA', 145),
   ('Pohnpei', 'PNI', 145),
-  ('Yap', 'YAP', 145);
+  ('Yap', 'YAP', 145),
   ('Aenii Noi', 'AN', 146),
   ('Basarabeasca', 'BS', 146),
   ('Bălți', 'BA', 146),
@@ -2558,7 +2558,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Ștefan Vodă', 'SV', 146),
   ('Taraclia', 'TA', 146),
   ('Telenești', 'TE', 146),
-  ('Ungheni', 'UN', 146);
+  ('Ungheni', 'UN', 146),
   ('Colle', 'CL', 147),
   ('Condamine', 'CO', 147),
   ('Fontvieille', 'FO', 147),
@@ -2575,7 +2575,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sainte-Dévote', 'SD', 147),
   ('Source', 'SO', 147),
   ('Spélugues', 'SP', 147),
-  ('Vallon de la Rousse', 'VR', 147);
+  ('Vallon de la Rousse', 'VR', 147),
   ('Arhangay', '073', 148),
   ('Bayan-Olgiy', '071', 148),
   ('Bayanhongor', '069', 148),
@@ -2595,7 +2595,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Suhbaatar', '051', 148),
   ('Tov', '047', 148),
   ('Ulaanbaatar', '1', 148),
-  ('Uvs', '046', 148);
+  ('Uvs', '046', 148),
   ('Andrijevica', '01', 149),
   ('Bar', '02', 149),
   ('Berane', '03', 149),
@@ -2618,10 +2618,10 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Šavnik', '18', 149),
   ('Tivat', '19', 149),
   ('Ulcinj', '20', 149),
-  ('Žabljak', '21', 149);
+  ('Žabljak', '21', 149),
   ('Saint Anthony', '', 150),
   ('Saint Georges', '', 150),
-  ('Saint Peter\'s', '', 150);
+  ('Saint Peter\'s', '', 150),
   ('Chaouia-Ouardigha', '09', 151),
   ('Doukhala-Abda', '10', 151),
   ('Fès-Boulemane', '05', 151),
@@ -2636,7 +2636,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Souss-Massa-Drâa', '13', 151),
   ('Tadla-Azilal', '12', 151),
   ('Tanger-Tétouan', '01', 151),
-  ('Taza-Al Hoceima-Taounate', '03', 151);
+  ('Taza-Al Hoceima-Taounate', '03', 151),
   ('Cabo Delgado', 'P', 152),
   ('Gaza', 'G', 152),
   ('Inhambane', 'I', 152),
@@ -2647,7 +2647,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Niassa', 'A', 152),
   ('Sofala', 'S', 152),
   ('Tete', 'T', 152),
-  ('Zambezia', 'Q', 152);
+  ('Zambezia', 'Q', 152),
   ('Ayeyarwady', '07', 153),
   ('Bago', '02', 153),
   ('Chin', '14', 153),
@@ -2662,7 +2662,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sagaing', '01', 153),
   ('Shan', '17', 153),
   ('Tanintharyi', '05', 153),
-  ('Yangon', '06', 153);
+  ('Yangon', '06', 153),
   ('Erongo', 'ER', 154),
   ('Hardap', 'HA', 154),
   ('Kavango East', 'KE', 154),
@@ -2676,7 +2676,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Oshana', 'ON', 154),
   ('Oshikoto', 'OT', 154),
   ('Otjozondjupa', 'OD', 154),
-  ('Zambezi', 'CA', 154);
+  ('Zambezi', 'CA', 154),
   ('Aiwo', '01', 155),
   ('Anabar', '02', 155),
   ('Anetan', '03', 155),
@@ -2690,7 +2690,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Meneng', '11', 155),
   ('Nibok', '12', 155),
   ('Uaboe', '13', 155),
-  ('Yaren', '14', 155);
+  ('Yaren', '14', 155),
   ('Bagmati', 'BA', 156),
   ('Bheri', 'BH', 156),
   ('Dhawalagiri', 'DH', 156),
@@ -2704,7 +2704,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Narayani', 'NA', 156),
   ('Rapti', 'RA', 156),
   ('Sagarmatha', 'SA', 156),
-  ('Seti', 'SE', 156);
+  ('Seti', 'SE', 156),
   ('Drenthe', 'DR', 157),
   ('Flevoland', 'FL', 157),
   ('Friesland', 'FR', 157),
@@ -2716,10 +2716,10 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Overijssel', 'OV', 157),
   ('Utrecht', 'UT', 157),
   ('Zeeland', 'ZE', 157),
-  ('Zuid-Holland', 'ZH', 157);
+  ('Zuid-Holland', 'ZH', 157),
   ('Iles Loyaute', '', 158),
   ('Nord', '', 158),
-  ('Sud', '', 158);
+  ('Sud', '', 158),
   ('Auckland', 'AUK', 159),
   ('Bay of Plenty', 'BOP', 159),
   ('Canterbury', 'CAN', 159),
@@ -2736,7 +2736,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Waikato', 'WKO', 159),
   ('Wellington', 'WGN', 159),
   ('West Coast', 'WTC', 159),
-  ('Chatham Islands Territory', 'CIT', 159);
+  ('Chatham Islands Territory', 'CIT', 159),
   ('Boaco', 'BO', 160),
   ('Carazo', 'CA', 160),
   ('Chinandega', 'CI', 160),
@@ -2753,7 +2753,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Río San Juan', 'SJ', 160),
   ('Rivas', 'RI', 160),
   ('Atlántico Norte', 'AN', 160),
-  ('Atlántico Sur', 'AS', 160);
+  ('Atlántico Sur', 'AS', 160),
   ('Agadez', '1', 161),
   ('Diffa', '2', 161),
   ('Dosso', '3', 161),
@@ -2761,7 +2761,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Niamey', '8', 161),
   ('Tahoua', '5', 161),
   ('Tillabéri', '6', 161),
-  ('Zinder', '7', 161);
+  ('Zinder', '7', 161),
   ('Abia', 'AB', 162),
   ('Abuja Federal Capital Territory', 'FC', 162),
   ('Adamawa', 'AD', 162),
@@ -2798,13 +2798,13 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sokoto', 'SO', 162),
   ('Taraba', 'TA', 162),
   ('Yobe', 'YO', 162),
-  ('Zamfara', 'ZA', 162);
-  ('Niue', '', 163);
-  ('Norfolk Island', '', 164);
+  ('Zamfara', 'ZA', 162),
+  ('Niue', '', 163),
+  ('Norfolk Island', '', 164),
   ('Northern Islands', '', 165),
   ('Rota', '', 165),
   ('Saipan', '', 165),
-  ('Tinian', '', 165);
+  ('Tinian', '', 165),
   ('Akershus', '02', 166),
   ('Aust-Agder', '09', 166),
   ('Buskerud', '06', 166),
@@ -2825,7 +2825,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Vestfold', '07', 166),
   ('Østfold', '01', 166),
   ('Jan Mayen', '22', 166),
-  ('Svalbard', '21', 166);
+  ('Svalbard', '21', 166),
   ('Ad Dakhiliyah', 'DA', 167),
   ('Al Buraymi', 'BU', 167),
   ('Al Wusta', 'WU', 167),
@@ -2836,7 +2836,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Musandam', 'MU', 167),
   ('Shamal al Batinah', 'BJ', 167),
   ('Shamal ash Sharqiyah', 'SJ', 167),
-  ('Zufar', 'ZU', 167);
+  ('Zufar', 'ZU', 167),
   ('Āzād Kashmīr', 'JK', 168),
   ('Balōchistān', 'BA', 168),
   ('Gilgit-Baltistān', 'GB', 168),
@@ -2844,7 +2844,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Khaībar Pakhtūnkhwās', 'KP', 168),
   ('Punjāb', 'PB', 168),
   ('Sindh', 'SD', 168),
-  ('Federally Administered Tribal Areas', 'TA', 168);
+  ('Federally Administered Tribal Areas', 'TA', 168),
   ('Aimeliik', '002', 169),
   ('Airai', '004', 169),
   ('Angaur', '010', 169),
@@ -2860,7 +2860,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Ngeremlengui', '227', 169),
   ('Ngiwal', '228', 169),
   ('Peleliu', '350', 169),
-  ('Sonsoral', '350', 169);
+  ('Sonsoral', '350', 169),
   ('Ak Khalīl', 'HBN', 170),
   ('Al Quds', 'JEM', 170),
   ('Arīḩā wal Aghwār', 'JRH', 170),
@@ -2876,7 +2876,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Salfīt', 'SLT', 170),
   ('Shamāl Ghazzah', 'NGZ', 170),
   ('Ţūbās', 'TBS', 170),
-  ('Ţūlkarm', 'TKM', 170);
+  ('Ţūlkarm', 'TKM', 170),
   ('Bocas del Toro', '1', 171),
   ('Chiriquí', '4', 171),
   ('Coclé', '2', 171),
@@ -2889,7 +2889,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Ngäbe-Buglé', 'NB', 171),
   ('Panamá', '8', 171),
   ('Panamá Oeste', '10', 171),
-  ('Veraguas', '9', 171);
+  ('Veraguas', '9', 171),
   ('Bougainville', 'NSB', 172),
   ('Central', 'CPM', 172),
   ('Chimbu', 'CPK', 172),
@@ -2911,7 +2911,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('West New Britain', 'WBK', 172),
   ('West Sepik', 'SAN', 172),
   ('Western', 'WPD', 172),
-  ('Western Highlands', 'WHM', 172);
+  ('Western Highlands', 'WHM', 172),
   ('Alto Paraguay', '16', 173),
   ('Alto Parana', '10', 173),
   ('Amambay', '13', 173),
@@ -2928,7 +2928,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Neembucu', '12', 173),
   ('Paraguari', '9', 173),
   ('Presidente Hayes', '15', 173),
-  ('San Pedro', '2', 173);
+  ('San Pedro', '2', 173),
   ('Amazonas', 'AMA', 174),
   ('Ancash', 'ANC', 174),
   ('Apurimac', 'APU', 174),
@@ -2954,7 +2954,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('San Martin', 'SAM', 174),
   ('Tacna', 'TAC', 174),
   ('Tumbes', 'TUM', 174),
-  ('Ucayali', 'UCA', 174);
+  ('Ucayali', 'UCA', 174),
   ('Abra', 'ABR', 175),
   ('Agusan del Norte', 'AGN', 175),
   ('Agusan del Sur', 'AGS', 175),
@@ -3034,8 +3034,8 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Zambales', 'ZMB', 175),
   ('Zamboanga del Norte', 'ZAN', 175),
   ('Zamboanga del Sur', 'ZAS', 175),
-  ('Zamboanga Sibugay', 'ZSI', 175);
-  ('Pitcairn Islands', '', 176);
+  ('Zamboanga Sibugay', 'ZSI', 175),
+  ('Pitcairn Islands', '', 176),
   ('Dolnośląskie', 'DS', 177),
   ('Kujawsko-pomorskie', 'KP', 177),
   ('Łódzkie', 'LD', 177),
@@ -3051,7 +3051,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Świętokrzyskie', 'SK', 177),
   ('Warmińsko-mazurskie', 'WN', 177),
   ('Wielkopolskie', 'WP', 177),
-  ('Zachodniopomorskie', 'ZP', 177);
+  ('Zachodniopomorskie', 'ZP', 177),
   ('Açores', '20', 178),
   ('Aveiro', '01', 178),
   ('Beja', '02', 178),
@@ -3071,7 +3071,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Setúbal', '15', 178),
   ('Viana do Castelo', '16', 178),
   ('Vila Real', '17', 178),
-  ('Viseu', '18', 178);
+  ('Viseu', '18', 178),
   ('Adjuntas', '', 179),
   ('Aguada', '', 179),
   ('Aguadilla', '', 179),
@@ -3144,15 +3144,15 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Vega ues', '', 179),
   ('Villalba', '', 179),
   ('Yabucoa', '', 179),
-  ('Yauco', '', 179);
+  ('Yauco', '', 179),
   ('Ad Dawḩah', 'DA', 180),
   ('Al Khawr wa adh Dhakhīrah', 'KH', 180),
   ('Al Wakrah', 'WA', 180),
   ('Ar Rayyān', 'RA', 180),
   ('Ash Shamāl', 'MS', 180),
   ('Az̧ Za̧`āyin', 'ZA', 180),
-  ('Umm Şalāl', 'US', 180);
-  ('Réunion', '', 181);
+  ('Umm Şalāl', 'US', 180),
+  ('Réunion', '', 181),
   ('Alba', 'AB', 182),
   ('Arad', 'AR', 182),
   ('Arges', 'AG', 182),
@@ -3193,7 +3193,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tulcea', 'TL', 182),
   ('Valcea', 'VL', 182),
   ('Vaslui', 'VS', 182),
-  ('Vrancea', 'VN', 182);
+  ('Vrancea', 'VN', 182),
   ('Republic of Adygea', 'AD', 183),
   ('Republic of Altai (Gorno-Altaysk)', 'AL', 183),
   ('Altai Krai', 'ALT', 183),
@@ -3276,19 +3276,19 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Voronezh Oblast', 'VOR', 183),
   ('Yamalo-Nenets Autonomous Okrug', 'YAN', 183),
   ('Yaroslavl Oblast', 'YAR', 183),
-  ('Zabaykalsky Krai', 'ZAB', 183);
+  ('Zabaykalsky Krai', 'ZAB', 183),
   ('Kigali', '01', 184),
   ('Eastern', '02', 184),
   ('Northern', '03', 184),
   ('Western', '04', 184),
-  ('Southern', '05', 184);
+  ('Southern', '05', 184),
   ('Au Vent', '02', 185),
-  ('Sous le Vent', '01', 185);
+  ('Sous le Vent', '01', 185),
   ('Ascension', 'AC', 186),
   ('Saint Helena', 'HL', 186),
-  ('Tristan da Cunha', 'TA', 186);
+  ('Tristan da Cunha', 'TA', 186),
   ('Saint Kitts', 'K', 187),
-  ('Nevis', 'N', 187);
+  ('Nevis', 'N', 187),
   ('Anse-la-Raye', '01', 188),
   ('Canaries', '12', 188),
   ('Castries', '02', 188),
@@ -3298,16 +3298,16 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Laborie', '07', 188),
   ('Micoud', '08', 188),
   ('Soufriere', '10', 188),
-  ('Vieux Fort', '11', 188);
-  ('Saint Martin', '', 189);
+  ('Vieux Fort', '11', 188),
+  ('Saint Martin', '', 189),
   ('Miquelon', '', 190),
-  ('Saint Pierre', '', 190);
+  ('Saint Pierre', '', 190),
   ('Charlotte', '01', 191),
   ('Grenadines', '06', 191),
   ('Saint Andrew', '02', 191),
   ('Saint David', '03', 191),
   ('Saint George', '04', 191),
-  ('Saint Patrick', '05', 191);
+  ('Saint Patrick', '05', 191),
   ('A\'ana', 'AA', 192),
   ('Aiga-i-le-Tai', 'AL', 192),
   ('Atua', 'AT', 192),
@@ -3318,7 +3318,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Satupa\'itea', 'SA', 192),
   ('Tuamasaga', 'TU', 192),
   ('Va\'a-o-Fonoti', 'VF', 192),
-  ('Vaisigano', 'VS', 192);
+  ('Vaisigano', 'VS', 192),
   ('Acquaviva', '01', 193),
   ('Borgo Maggiore', '06', 193),
   ('Chiesanuova', '02', 193),
@@ -3327,9 +3327,9 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Fiorentino', '05', 193),
   ('Montegiardino', '08', 193),
   ('San Marino', '07', 193),
-  ('Serravalle', '09', 193);
+  ('Serravalle', '09', 193),
   ('Principe', 'P', 194),
-  ('Sao Tome', 'S', 194);
+  ('Sao Tome', 'S', 194),
   ('\'Asir', '14', 195),
   ('Al Bahah', '11', 195),
   ('Al Hudud ash Shamaliyah', '08', 195),
@@ -3342,7 +3342,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Jazan', '09', 195),
   ('Makkah al Mukarramah', '02', 195),
   ('Najran', '10', 195),
-  ('Tabuk', '07', 195);
+  ('Tabuk', '07', 195),
   ('Dakar', 'DK', 196),
   ('Diourbel', 'DB', 196),
   ('Fatick', 'FK', 196),
@@ -3356,7 +3356,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sedhiou', 'SE', 196),
   ('Tambacounda', 'TC', 196),
   ('Thies', 'TH', 196),
-  ('Ziguinchor', 'ZG', 196);
+  ('Ziguinchor', 'ZG', 196),
   ('Beograd (Belgrade)', '00', 197),
   ('Borski', '14', 197),
   ('Braničevski', '11', 197),
@@ -3386,7 +3386,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Toplički', '21', 197),
   ('Zaječarski', '15', 197),
   ('Zapadnobački', '05', 197),
-  ('Zlatiborski', '16', 197);
+  ('Zlatiborski', '16', 197),
   ('Anse aux Pins', '01', 198),
   ('Anse Boileau', '02', 198),
   ('Anse Etoile', '03', 198),
@@ -3411,17 +3411,17 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Port Glaud', '21', 198),
   ('Roche Caiman', '25', 198),
   ('Saint Louis', '22', 198),
-  ('Takamaka', '23', 198);
+  ('Takamaka', '23', 198),
   ('Eastern', 'E', 199),
   ('Northern', 'N', 199),
   ('Southern', 'S', 199),
-  ('Western', 'W', 199);
+  ('Western', 'W', 199),
   ('Central Singapore', '01', 200),
   ('North East', '02', 200),
   ('North West', '03', 200),
   ('South East', '04', 200),
-  ('South West', '05', 200);
-  ('Sint Maarten', '', 201);
+  ('South West', '05', 200),
+  ('Sint Maarten', '', 201),
   ('Banskobystricky', 'BC', 202),
   ('Bratislavsky', 'BL', 202),
   ('Kosicky', 'KI', 202),
@@ -3429,7 +3429,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Presovsky', 'PV', 202),
   ('Trenciansky', 'TC', 202),
   ('Trnavsky', 'TA', 202),
-  ('Zilinsky', 'ZI', 202);
+  ('Zilinsky', 'ZI', 202),
   ('Ajdovscina', '001', 203),
   ('Apace', '195', 203),
   ('Beltinci', '002', 203),
@@ -3635,7 +3635,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Zetale', '191', 203),
   ('Ziri', '147', 203),
   ('Zirovnica', '192', 203),
-  ('Zuzemberk', '193', 203);
+  ('Zuzemberk', '193', 203),
   ('Central', 'CE', 204),
   ('Choiseul', 'CH', 204),
   ('Guadalcanal', 'GU', 204),
@@ -3645,7 +3645,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Malaita', 'ML', 204),
   ('Rennell and Bellona', 'RB', 204),
   ('Temotu', 'TE', 204),
-  ('Western', 'WE', 204);
+  ('Western', 'WE', 204),
   ('Awdal', 'AW', 205),
   ('Bakool', 'BK', 205),
   ('Banaadir', 'BN', 205),
@@ -3663,7 +3663,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Shabeellaha Hoose', 'SH', 205),
   ('Sool', 'SO', 205),
   ('Togdheer', 'TO', 205),
-  ('Woqooyi Galbeed', 'WO', 205);
+  ('Woqooyi Galbeed', 'WO', 205),
   ('Eastern Cape', 'EC', 206),
   ('Free State', 'FS', 206),
   ('Gauteng', 'GT', 206),
@@ -3672,7 +3672,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Mpumalanga', 'MP', 206),
   ('Northern Cape', 'NC', 206),
   ('North West', 'NW', 206),
-  ('Western Cape', 'WC', 206);
+  ('Western Cape', 'WC', 206),
   ('Bird Island', '', 207),
   ('Bristol Island', '', 207),
   ('Clerke Rocks', '', 207),
@@ -3680,7 +3680,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Saunders Island', '', 207),
   ('South Georgia', '', 207),
   ('Southern Thule', '', 207),
-  ('Traversay Islands', '', 207);
+  ('Traversay Islands', '', 207),
   ('Central Equatoria', 'CE', 208),
   ('Eastern Equatoria', 'EE', 208),
   ('Jonglei', 'JG', 208),
@@ -3690,7 +3690,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Upper Nile', 'NU', 208),
   ('Warrap', 'WR', 208),
   ('Western Bahr el Ghazal', 'BW', 208),
-  ('Western Equatoria', 'EW', 208);
+  ('Western Equatoria', 'EW', 208),
   ('Albacete', 'CM', 209),
   ('Alicante', 'VC', 209),
   ('Almería', 'AN', 209),
@@ -3742,7 +3742,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Valencia', 'V', 209),
   ('Valladolid', 'VA', 209),
   ('Zamora', 'ZA', 209),
-  ('Zaragoza', 'Z', 209);
+  ('Zaragoza', 'Z', 209),
   ('Basnahira', '1', 210),
   ('Dakunu', '3', 210),
   ('Madhyama', '2', 210),
@@ -3751,7 +3751,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Uturu', '4', 210),
   ('Uturumaeda', '7', 210),
   ('Vayamba', '6', 210),
-  ('Uva', '8', 210);
+  ('Uva', '8', 210),
   ('Al Bahr al Ahmar', 'RS', 211),
   ('Al Jazirah', 'GZ', 211),
   ('Al Khartum', 'KH', 211),
@@ -3769,7 +3769,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sharq Darfur', 'DE', 211),
   ('Shiamal Kurdufan', 'KN', 211),
   ('Sinnar', 'SI', 211),
-  ('Wasat Darfur Zalinjay', 'DC', 211);
+  ('Wasat Darfur Zalinjay', 'DC', 211),
   ('Brokopondo', 'BR', 212),
   ('Commewijne', 'CM', 212),
   ('Coronie', 'CR', 212),
@@ -3779,11 +3779,11 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Paramaribo', 'PM', 212),
   ('Saramacca', 'SA', 212),
   ('Sipaliwini', 'SI', 212),
-  ('Wanica', 'WA', 212);
+  ('Wanica', 'WA', 212),
   ('Hhohho', 'HH', 213),
   ('Lubombo', 'LU', 213),
   ('Manzini', 'MA', 213),
-  ('Shiselweni', 'SH', 213);
+  ('Shiselweni', 'SH', 213),
   ('Blekinge', 'K', 214),
   ('Dalarna', 'W', 214),
   ('Gävleborg', 'X', 214),
@@ -3804,7 +3804,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Västerbotten', 'AC', 214),
   ('Västernorrland', 'Y', 214),
   ('Västmanland', 'U', 214),
-  ('Västra Götaland', 'O', 214);
+  ('Västra Götaland', 'O', 214),
   ('Aargau', 'AG', 215),
   ('Appenzell Ausserrhoden', 'AR', 215),
   ('Appenzell Innerhoden', 'AI', 215),
@@ -3830,7 +3830,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Valais', 'VS', 215),
   ('Vaud', 'VD', 215),
   ('Zug', 'ZG', 215),
-  ('Zürich', 'ZH', 215);
+  ('Zürich', 'ZH', 215),
   ('Al Hasakah', 'HA', 216),
   ('Al Ladhiqiyah', 'LA', 216),
   ('Al Qunaytirah', 'QU', 216),
@@ -3844,7 +3844,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Hims', 'HI', 216),
   ('Idlib', 'ID', 216),
   ('Rif Dimashq', 'RD', 216),
-  ('Tartus', 'TA', 216);
+  ('Tartus', 'TA', 216),
   ('Chang-hua', 'CHA', 217),
   ('Chia-i', 'CYQ', 217),
   ('Hsin-chu', 'HSQ', 217),
@@ -3864,11 +3864,11 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('T\'ai-tung', 'TTT', 217),
   ('T\'ao-yuan', 'TAO', 217),
   ('Yi-lan', 'ILA', 217),
-  ('Yun-lin', 'YUN', 217);
+  ('Yun-lin', 'YUN', 217),
   ('Dushanbe', 'DU', 218),
   ('Kŭhistoni Badakhshon', 'GB', 218),
   ('Khatlon', 'KT', 218),
-  ('Sughd', 'SU', 218);
+  ('Sughd', 'SU', 218),
   ('Arusha', '01', 219),
   ('Coast', '19', 219),
   ('Dar es Salaam', '02', 219),
@@ -3894,7 +3894,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tanga', '25', 219),
   ('Zanzibar North', '07', 219),
   ('Zanzibar Central/South', '11', 219),
-  ('Zanzibar Urban/West', '15', 219);
+  ('Zanzibar Urban/West', '15', 219),
   ('Amnat Charoen', '37', 220),
   ('Ang Thong', '15', 220),
   ('Bueng Kan', '38', 220),
@@ -3971,7 +3971,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Uthai Thani', '61', 220),
   ('Uttaradit', '53', 220),
   ('Yala', '95', 220),
-  ('Yasothon', '35', 220);
+  ('Yasothon', '35', 220),
   ('Aileu', 'AL', 221),
   ('Ainaro', 'AN', 221),
   ('Baucau', 'BA', 221),
@@ -3984,20 +3984,20 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Manatuto', 'MT', 221),
   ('Manufahi', 'MF', 221),
   ('Oecussi', 'OE', 221),
-  ('Viqueque', 'VI', 221);
+  ('Viqueque', 'VI', 221),
   ('Centre', 'C', 222),
   ('Kara', 'K', 222),
   ('Maritime', 'M', 222),
   ('Plateaux', 'P', 222),
-  ('Savannes', 'S', 222);
+  ('Savannes', 'S', 222),
   ('Atafu', '', 223),
   ('Fakaofo', '', 223),
-  ('Nukunonu', '', 223);
+  ('Nukunonu', '', 223),
   ('\'Eua', '01', 224),
   ('Ha\'apai', '02', 224),
   ('Niuas', '03', 224),
   ('Tongatapu', '04', 224),
-  ('Vava\'u', '05', 224);
+  ('Vava\'u', '05', 224),
   ('Arima', 'ARI', 225),
   ('Chaguanas', 'CHA', 225),
   ('Couva-Tabaquite-Talparo', 'CTT', 225),
@@ -4012,7 +4012,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Sangre Grande', 'SGE', 225),
   ('Siparia', 'SIP', 225),
   ('Tobago', 'TOB', 225),
-  ('Tunapuna-Piarco', 'TUP', 225);
+  ('Tunapuna-Piarco', 'TUP', 225),
   ('Ariana', '12', 226),
   ('Beja', '31', 226),
   ('Ben Arous', '13', 226),
@@ -4035,7 +4035,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Tataouine', '83', 226),
   ('Tozeur', '72', 226),
   ('Tunis', '11', 226),
-  ('Zaghouan', '22', 226);
+  ('Zaghouan', '22', 226),
   ('Adana', '01', 227),
   ('Adiyaman', '02', 227),
   ('Afyonkarahisar', '03', 227),
@@ -4116,14 +4116,14 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Van', '65', 227),
   ('Yalova', '77', 227),
   ('Yozgat', '66', 227),
-  ('Zonguldak', '67', 227);
+  ('Zonguldak', '67', 227),
   ('Ahal', 'A', 228),
   ('Asgabat', 'S', 228),
   ('Balkan', 'B', 228),
   ('Dashoguz', 'D', 228),
   ('Lebap', 'L', 228),
-  ('Mary', 'M', 228);
-  ('Turks and Caicos Islands', '', 229);
+  ('Mary', 'M', 228),
+  ('Turks and Caicos Islands', '', 229),
   ('Funafuti', 'FUN', 230),
   ('Nanumanga', 'NMG', 230),
   ('Nanumea', 'NMA', 230),
@@ -4131,7 +4131,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Nui', 'NUI', 230),
   ('Nukufetau', 'NKF', 230),
   ('Nukulaelae', 'NKL', 230),
-  ('Vaitupu', 'VAU', 230);
+  ('Vaitupu', 'VAU', 230),
   ('Abim', '317', 231),
   ('Adjumani', '301', 231),
   ('Amolatar', '314', 231),
@@ -4211,7 +4211,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Soroti', '211', 231),
   ('Tororo', '212', 231),
   ('Wakiso', '113', 231),
-  ('Yumbe', '313', 231);
+  ('Yumbe', '313', 231),
   ('Cherkasy', '71', 232),
   ('Chernihiv', '74', 232),
   ('Chernivtsi', '77', 232),
@@ -4238,14 +4238,14 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Zhytomyr', '18', 232),
   ('Avtonomna Respublika Krym', '43', 232),
   ('Kyïv', '30', 232),
-  ('Sevastopol', '40', 232);
+  ('Sevastopol', '40', 232),
   ('Abu Dhabi', 'AZ', 233),
   ('Ajman', 'AJ', 233),
   ('Dubai', 'DU', 233),
   ('Fujairah', 'FU', 233),
   ('Ras al Khaimah', 'RK', 233),
   ('Sharjah', 'SH', 233),
-  ('Umm Al Quwain', 'UQ', 233);
+  ('Umm Al Quwain', 'UQ', 233),
   ('Aberdeen City', 'ABE', 234),
   ('Aberdeenshire', 'ABD', 234),
   ('Angus', 'ANS', 234),
@@ -4462,7 +4462,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Wolverhampton', 'WLV', 234),
   ('Worcestershire', 'WOR', 234),
   ('Wrexham', 'WRX', 234),
-  ('York', 'YOR', 234);
+  ('York', 'YOR', 234),
   ('Alabama', 'AL', 235),
   ('Alaska', 'AK', 235),
   ('American Samoa', 'AS', 235),
@@ -4524,7 +4524,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Wyoming', 'WY', 235),
   ('Armed Forces Americas', 'AA', 235),
   ('Armed Forces Europe, Canada, Africa and Middle East', 'AE', 235),
-  ('Armed Forces Pacific', 'AP', 235);
+  ('Armed Forces Pacific', 'AP', 235),
   ('Baker Island', '81', 236),
   ('Howland Island', '84', 236),
   ('Jarvis Island', '86', 236),
@@ -4535,7 +4535,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Palmyra Atoll', '95', 236),
   ('Wake Island', '79', 236),
   ('Bajo Nuevo Bank', 'BN', 236),
-  ('Serranilla Bank', 'SB', 236);
+  ('Serranilla Bank', 'SB', 236),
   ('Artigas', 'AR', 237),
   ('Canelones', 'CA', 237),
   ('Cerro Largo', 'CL', 237),
@@ -4554,7 +4554,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('San José', 'SJ', 237),
   ('Soriano', 'SO', 237),
   ('Tacuarembó', 'TA', 237),
-  ('Treinta y Tres', 'TT', 237);
+  ('Treinta y Tres', 'TT', 237),
   ('Toshkent shahri', 'TK', 238),
   ('Andijon', 'AN', 238),
   ('Buxoro', 'BU', 238),
@@ -4568,13 +4568,13 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Surxondaryo (Termiz)', 'SU', 238),
   ('Toshkent wiloyati', 'TO', 238),
   ('Xorazm (Urganch)', 'XO', 238),
-  ('Qoraqalpog‘iston Respublikasi (Nukus)', 'QR', 238);
+  ('Qoraqalpog‘iston Respublikasi (Nukus)', 'QR', 238),
   ('Malampa', 'MAP', 239),
   ('Pénama', 'PAM', 239),
   ('Sanma', 'SAM', 239),
   ('Shéfa', 'SEE', 239),
   ('Taféa', 'TAE', 239),
-  ('Torba', 'TOB', 239);
+  ('Torba', 'TOB', 239),
   ('Dependencias Federales', 'W', 240),
   ('Distrito Federal', 'A', 240),
   ('Amazonas', 'Z', 240),
@@ -4599,7 +4599,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Trujillo', 'T', 240),
   ('Vargas', 'X', 240),
   ('Yaracuy', 'U', 240),
-  ('Zulia', 'V', 240);
+  ('Zulia', 'V', 240),
   ('Đồng Nai', '39', 241),
   ('Đồng Tháp', '45', 241),
   ('Gia Lai', '30', 241),
@@ -4647,22 +4647,22 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Đà Nẵng', 'DN', 241),
   ('Hà Nội', 'HN', 241),
   ('Hải Phòng', 'HP', 241),
-  ('Hồ Chí Minh (Sài Gòn)', 'SG', 241);
+  ('Hồ Chí Minh (Sài Gòn)', 'SG', 241),
   ('Anegada', 'ANG', 242),
   ('Jost Van Dyke', 'JVD', 242),
   ('Tortola', 'TTA', 242),
-  ('Virgin Gorda', 'VGD', 242);
+  ('Virgin Gorda', 'VGD', 242),
   ('St. Thomas', 'STH', 243),
   ('St. John', 'SJO', 243),
-  ('St. Croix', 'SCR', 243);
+  ('St. Croix', 'SCR', 243),
   ('Alo', 'ALO', 244),
   ('Sigave', 'SIG', 244),
-  ('Wallis', 'WAL', 244);
+  ('Wallis', 'WAL', 244),
   ('Es Smara', 'ESM', 245),
   ('Boujdour', 'BOD', 245),
   ('Laâyoune', 'LAA', 245),
   ('Aousserd', 'AOU', 245),
-  ('Oued ed Dahab', 'OUD', 245);
+  ('Oued ed Dahab', 'OUD', 245),
   ('Abyān', 'AB', 246),
   ('\'Adan', 'AD', 246),
   ('Aḑ Ḑāli\'', 'DA', 246),
@@ -4682,7 +4682,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Şā‘dah', 'SD', 246),
   ('Şan‘ā\'', 'SN', 246),
   ('Shabwah', 'SH', 246),
-  ('Tā‘izz', 'TA', 246);
+  ('Tā‘izz', 'TA', 246),
   ('Central', '02', 247),
   ('Copperbelt', '08', 247),
   ('Eastern', '03', 247),
@@ -4691,7 +4691,7 @@ INSERT INTO `regions`(`name`, `code`, `country_code`)
   ('Northern', '05', 247),
   ('North-Western', '06', 247),
   ('Southern', '07', 247),
-  ('Western', '01', 247);
+  ('Western', '01', 247),
   ('Bulawayo', 'BU', 248),
   ('Harare', 'HA', 248),
   ('Manicaland', 'MA', 248),

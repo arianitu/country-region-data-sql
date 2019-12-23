@@ -51,7 +51,7 @@ func main() {
 	}
 	fmt.Printf("\n")
 
-	regionInsert := "INSERT INTO `regions`(`name`, `code`, `country_code`)"
+	regionInsert := "INSERT INTO `regions`(`name`, `code`, `country_id`) VALUES "
 	fmt.Println(regionInsert)
 
 	regionValues := "  ('%s', '%s', %d)"
@@ -69,7 +69,9 @@ func main() {
 
 	for countryIdx, country := range countries {
 		for regionIdx, region := range country.Regions {
-			fmt.Println(rv(countryIdx+1, region, regionIdx == len(country.Regions)-1))
+			fmt.Println(rv(countryIdx+1,
+				region,
+				regionIdx == len(country.Regions)-1 && countryIdx == len(countries)-1))
 		}
 	}
 	fmt.Printf("\n")
