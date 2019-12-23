@@ -15,5 +15,5 @@ This repo contains a .sql file that can be used on MySQL and Postgres for countr
 
 ### Re-generating the data
 
-The data is generated from the JSON at https://github.com/country-regions/country-region-data , you can download the JSON there and then run `go run generate_data.sql > data.sql`
+The data is generated from the JSON at https://github.com/country-regions/country-region-data , you can download and replace the data.json in this repo and then run `go run generate_data.sql > data.sql`
 
